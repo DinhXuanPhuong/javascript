@@ -1,0 +1,14 @@
+<script>
+let diem = Number(prompt("Nhập điểm của bạn (0-10):"));
+if (diem < 0 || diem > 10 || !Number.isFinite(diem)) {
+    alert("Điểm không hợp lệ! Vui lòng nhập từ 0 đến 10.");
+} else if (diem > 8) {
+    alert("Xếp loại: Giỏi");
+} else if (diem > 6.5) {
+    alert("Xếp loại: Khá");
+} else if (diem >= 5) {
+    alert("Xếp loại: Trung bình");
+} else {
+    alert("Xếp loại: Yếu");
+}
+</script>
