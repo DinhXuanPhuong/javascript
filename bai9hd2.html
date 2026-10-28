@@ -1,0 +1,11 @@
+<script> 
+function chaoNguoiDung(ten, namSinh) {
+    let namHienTai = new Date().getFullYear();
+    let tuoi = namHienTai - namSinh;
+    return `Chào ${ten}, bạn hiện tại ${tuoi} tuổi`;
+}
+// Gọi hàm và in kết quả
+console.log(chaoNguoiDung("An", 2005));
+console.log(chaoNguoiDung("Bình", 2000));
+console.log(chaoNguoiDung("Lan", 1998));
+</script>

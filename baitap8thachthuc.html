@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Website chào mừng</title>
+</head>
+<body>
+    <h1>Chào mừng đến với website của chúng tôi!</h1>
+    <!-- Khu vực hiển thị lời chào -->
+    <div id="loiChao"></div>
+    <script>
+        // Bước 1: Khai báo hàm cập nhật lời chào
+        function capNhatLoiChao() {
+            // Bước 2: Lấy giờ hiện tại của hệ thống
+            let bayGio = new Date();
+            let gio = bayGio.getHours();
+            // Bước 3: Khai báo biến lưu lời chào
+            let loiChao;
+            // Bước 4: Kiểm tra thời gian
+            if (gio >= 5 && gio < 12) {
+                loiChao = "Chào buổi sáng!";
+            } else if (gio >= 12 && gio < 18) {
+                loiChao = "Chào buổi chiều!";
+            } else {
+                loiChao = "Chào buổi tối!";
+            }
+            // Bước 5: Sử dụng DOM và innerHTML
+            document.getElementById("loiChao").innerHTML =
+                "<h2>" + loiChao + "</h2>" +
+                "<p>Bây giờ là: " +
+                bayGio.toLocaleTimeString("vi-VN") +
+                "</p>";
+        }
+        // Bước 6: Hiển thị lời chào ngay khi mở trang
+        capNhatLoiChao();
+
+        // Bước 7: Cập nhật nội dung mỗi giây
+        setInterval(capNhatLoiChao, 1000);
+    </script>
+
+</body>
+</html>
