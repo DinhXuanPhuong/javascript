@@ -1,0 +1,12 @@
+{
+  "name": "javascript-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio trang web và thử thách lời chào theo thời gian",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
