@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Collector</title>
+</head>
+<body>
+
+    <h2>Thông tin người dùng</h2>
+
+    <form id="userForm">
+        <label>Họ tên:</label>
+        <input type="text" id="name" required>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+        <br><br>
+
+        <p>Giới tính:</p>
+        <input type="radio" name="gender" value="male"> Nam
+        <input type="radio" name="gender" value="female"> Nữ
+
+        <p>Sở thích:</p>
+        <input type="checkbox" name="hobby" value="reading"> Đọc sách
+        <input type="checkbox" name="hobby" value="coding"> Lập trình
+        <input type="checkbox" name="hobby" value="gaming"> Chơi game
+        <input type="checkbox" name="hobby" value="music"> Nghe nhạc
+
+        <br><br>
+
+        <label>Thành phố:</label>
+        <input type="text" id="city" required>
+
+        <br><br>
+        <button type="submit">Thu thập dữ liệu</button>
+    </form>
+
+    <script src="bai11hd3.js"></script>
+</body>
+</html>

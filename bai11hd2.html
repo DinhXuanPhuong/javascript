@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Validator</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            padding: 30px;
+        }
+
+        form {
+            background: white;
+            padding: 25px;
+            max-width: 350px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .error-msg {
+            color: red;
+            font-size: 13px;
+            display: block;
+            margin: 5px 0 12px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="register-form">
+        <h2>Đăng ký tài khoản</h2>
+
+        <label>Username:</label>
+        <input type="text" id="username">
+        <span class="error-msg" id="username-error"></span>
+
+        <label>Email:</label>
+        <input type="text" id="email">
+        <span class="error-msg" id="email-error"></span>
+
+        <br><br>
+        <button type="submit">Đăng ký</button>
+    </form>
+
+    <script src="bai11hd2.js"></script>
+</body>
+</html>
